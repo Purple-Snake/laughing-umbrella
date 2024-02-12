@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3 uid="uid://d01m1wpu66nxa"]
+
+[ext_resource type="TileSet" uid="uid://dhklaqrmsl37o" path="res://Combat_board/UnitOverlay/unit_path_tileset.tres" id="1_f4b3g"]
+[ext_resource type="Script" path="res://Combat_board/UnitOverlay/unit_path.gd" id="2_j6km4"]
+[ext_resource type="Resource" uid="uid://ev5wgeilhqy7" path="res://Combat_board/Grid/Grid.tres" id="3_unlo5"]
+
+[node name="UnitPath" type="TileMap"]
+tile_set = ExtResource("1_f4b3g")
+format = 2
+script = ExtResource("2_j6km4")
+grid = ExtResource("3_unlo5")

@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://dq1ar3puqsbwi"]
+
+[ext_resource type="Script" path="res://Combat_board/Cursor/cursor.gd" id="1_l0xid"]
+[ext_resource type="Texture2D" uid="uid://fxipxwf87q1g" path="res://Assets/Cursor.png" id="1_nvw50"]
+[ext_resource type="Resource" uid="uid://ev5wgeilhqy7" path="res://Combat_board/Grid/Grid.tres" id="2_bhxhu"]
+
+[node name="Cursor" type="Node2D"]
+script = ExtResource("1_l0xid")
+grid = ExtResource("2_bhxhu")
+
+[node name="Cursor" type="Sprite2D" parent="."]
+texture = ExtResource("1_nvw50")
+
+[node name="Timer" type="Timer" parent="."]

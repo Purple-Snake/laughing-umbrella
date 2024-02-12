@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="grid" load_steps=2 format=3 uid="uid://ev5wgeilhqy7"]
+
+[ext_resource type="Script" path="res://Combat_board/Grid/Grid.gd" id="1_umabn"]
+
+[resource]
+script = ExtResource("1_umabn")
+size = Vector2(50, 50)
+cell_size = Vector2(16, 16)

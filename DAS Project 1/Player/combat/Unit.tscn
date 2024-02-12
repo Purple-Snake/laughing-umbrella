@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://j4ew1fntso8e"]
+
+[ext_resource type="Texture2D" uid="uid://dpxb6g05vjt7l" path="res://icon.svg" id="1_ecei5"]
+[ext_resource type="Script" path="res://Player/combat/scripts/Unit.gd" id="1_lbarb"]
+[ext_resource type="Resource" uid="uid://ev5wgeilhqy7" path="res://Combat_board/Grid/Grid.tres" id="2_0hbxq"]
+
+[sub_resource type="Curve2D" id="Curve2D_bo4t6"]
+
+[node name="Unit" type="Path2D"]
+curve = SubResource("Curve2D_bo4t6")
+script = ExtResource("1_lbarb")
+grid = ExtResource("2_0hbxq")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
+rotates = false
+loop = false
+
+[node name="Sprite2D" type="Sprite2D" parent="PathFollow2D"]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_ecei5")
